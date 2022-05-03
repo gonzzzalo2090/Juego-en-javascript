@@ -47,12 +47,26 @@ body {
 .bienvenida h1 {
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin-top: 0;
+}
+@media (min-width: 768px) { 
+  .bienvenida h1 {
+    font-size: 5rem;
+  }
 }
 
 .bienvenida-botones {
   display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) { 
+  .bienvenida-botones {
+    flex-direction: row;
+    gap: 0;
+  }
 }
 
 .bienvenida button {
@@ -80,12 +94,14 @@ body {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.cabecera-num {
-  font-family: var(--font-display);
-  color: var(--negro);
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 0.9;
+@media (min-width: 768px) { 
+  .cabecera-num {
+    font-family: var(--font-display);
+    color: var(--negro);
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 0.9;
+  }
 }
 
 .contadores {
